@@ -7,13 +7,6 @@ external-dns:
 
   provider: aws
 
-  aws:
-    region: "us-east-1"
-    credentials:
-      accessKey: "AKIA6BIPVMUDTZMUSPLN"
-      secretKey: "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"
-    roleArn: "arn:aws:iam::964789888263:role/externaldns"
-
   domainFilters:
     - knaws.com
     - service.knaws.com
