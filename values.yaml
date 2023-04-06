@@ -18,7 +18,7 @@ external-dns:
     - knaws.com
     - service.knaws.com
 
-  # txtOwnerId: my-unique-txt-owner-id
+  txtOwnerId: my-unique-txt-owner-id
 
   interval: 1m
   ttl: 300
