@@ -14,6 +14,7 @@ aws:
 
 domainFilters:
   - knaws.com
+  - service.knaws.com
 
 # txtOwnerId: my-unique-txt-owner-id
 
