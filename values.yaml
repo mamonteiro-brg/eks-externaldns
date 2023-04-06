@@ -1,28 +1,29 @@
-image:
-  registry: docker.io
-  repository: bitnami/external-dns
-  tag: 0.12.4-debian-11-r2
-  pullPolicy: IfNotPresent
+external-dns:
+  image:
+    registry: docker.io
+    repository: bitnami/external-dns
+    tag: 0.12.4-debian-11-r2
+    pullPolicy: IfNotPresent
 
-provider: aws
+  provider: aws
 
-aws:
-  region: us-east-1
-  credentials:
-    accessKey: AKIA6BIPVMUDTZMUSPLN
-    secretKey: 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
-  roleArn: arn:aws:iam::964789888263:role/externaldns
+  aws:
+    region: us-east-1
+    credentials:
+      accessKey: AKIA6BIPVMUDTZMUSPLN
+      secretKey: 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
+    roleArn: arn:aws:iam::964789888263:role/externaldns
 
-domainFilters:
-  - knaws.com
-  - service.knaws.com
+  domainFilters:
+    - knaws.com
+    - service.knaws.com
 
-# txtOwnerId: my-unique-txt-owner-id
+  # txtOwnerId: my-unique-txt-owner-id
 
-interval: 1m
-ttl: 300
-registry: txt
+  interval: 1m
+  ttl: 300
+  registry: txt
 
-extraArgs:
-  - --source=service
-  - --source=ingress
+  extraArgs:
+    - --source=service
+    - --source=ingress
