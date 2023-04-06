@@ -1,0 +1,26 @@
+image:
+  registry: docker.io
+  repository: bitnami/external-dns
+  tag: 0.11.0
+  pullPolicy: IfNotPresent
+
+provider: aws
+
+aws:
+  region: us-east-1
+  credentials:
+    accessKey: AKIA6BIPVMUDTZMUSPLN
+    secretKey: 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
+
+domainFilters:
+  - knaws.com
+
+# txtOwnerId: my-unique-txt-owner-id
+
+interval: 1m
+ttl: 300
+registry: txt
+
+extraArgs:
+  - --source=service
+  - --source=ingress
