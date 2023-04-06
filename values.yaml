@@ -11,6 +11,7 @@ aws:
   credentials:
     accessKey: AKIA6BIPVMUDTZMUSPLN
     secretKey: 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
+  roleArn: arn:aws:iam::964789888263:role/externaldns
 
 domainFilters:
   - knaws.com
