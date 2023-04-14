@@ -17,6 +17,7 @@ external-dns:
   domainFilters:
     - knaws.com
     - service.knaws.com
+    - service.coco.com
 
   txtOwnerId: my-unique-txt-owner-id
 
