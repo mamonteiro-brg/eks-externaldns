@@ -18,6 +18,7 @@ external-dns:
     - knaws.com
     - service.knaws.com
     - service.coco.com
+    - service.cenas.com
 
   txtOwnerId: my-unique-txt-owner-id
 
